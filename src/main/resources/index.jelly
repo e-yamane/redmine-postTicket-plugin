@@ -1,0 +1,6 @@
+<!--
+  This view is used to render the installed plugins page.
+-->
+<div>
+  このプラグインはビルドが失敗した場合にRedmineのチケットを生成し、ビルドが正しく通過したらそのチケットをCloseするプラグインです。
+</div>
