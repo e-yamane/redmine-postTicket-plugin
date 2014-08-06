@@ -15,6 +15,12 @@
           <f:entry title="${%APIアクセスキー}">
             <f:textbox name="jp.roughdiamond.redminepostticke.accessKey" value="${project.accessKey}"  />
           </f:entry>
+          <f:entry title="${%完了ステータス名}">
+            <f:textbox name="jp.roughdiamond.redminepostticke.closedStatusName" value="${project.closedStatusName}"  />
+          </f:entry>
+          <f:entry title="${%バグチケットトラッカー名}">
+            <f:textbox name="jp.roughdiamond.redminepostticke.trackerName" value="${project.trackerName}"  />
+          </f:entry>
           <f:entry title="">
             <div align="right">
               <f:repeatableDeleteButton />

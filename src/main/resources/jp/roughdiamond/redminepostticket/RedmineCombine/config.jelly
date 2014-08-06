@@ -1,5 +1,4 @@
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
-  xyz:::::::::${descriptor.projects.size()}<br />
   <j:if test="${descriptor.projects.size() gt 0}">
     <f:entry title="Redmineプロジェクト">
       <select class="setting-input" name="redmine.projectName">
@@ -7,6 +6,9 @@
           <f:option selected="${project.name==instance.projectName}">${project.name}</f:option>
         </j:forEach>
       </select>
+      <f:entry title="クエリID(省略可)" field="queryId">
+        <f:textbox />
+      </f:entry>
 <!--
       <f:advanced>
         <f:entry title="Always triggered" field="alwaysTriggered">
